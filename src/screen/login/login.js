@@ -25,7 +25,7 @@ const Login=()=>{
             }
     }
 
-    const login=async ()=>{
+    const login=async()=>{
         setErrMessage(null);
         try{
             const user= await firebaseConfig.auth().signInWithEmailAndPassword(Email,Password);
